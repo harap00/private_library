@@ -1,4 +1,4 @@
-!pip install yapf isort autopep8 | tail -n -1
+pip install yapf isort autopep8 | tail -n -1
 
 import autopep8
 import isort
