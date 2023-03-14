@@ -2,6 +2,8 @@
 Seleniumを利用する際の初期処理
 '''
 
+import subprocess
+
 shell_command = '''
 cat > /etc/apt/sources.list.d/debian.list <<'EOF'
 deb [arch=amd64 signed-by=/usr/share/keyrings/debian-buster.gpg] http://deb.debian.org/debian buster main
@@ -40,6 +42,8 @@ apt-get install chromium chromium-driver | tail -n -1
 
 pip install -q selenium | tail -n -1
 '''
+
+subprocess.run(shell_command)
 
 import time
 
