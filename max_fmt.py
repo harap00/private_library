@@ -1,3 +1,7 @@
+%%shell
+pip install yapf isort autopep8 | tail -n -1
+EOF
+
 import autopep8
 import isort
 from IPython.core.magic import register_cell_magic
