@@ -7,7 +7,7 @@ install_requires = [
 ]
 
 setup(
-    name='max_fmt',
+    name='private_library',
     version='0.1',
     packages=find_packages()
 )
