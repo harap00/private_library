@@ -43,7 +43,7 @@ apt-get install chromium chromium-driver | tail -n -1
 pip install -q selenium | tail -n -1
 '''
 
-subprocess.run(shell_command)
+subprocess.run(shell_command, shell=True)
 
 import time
 
