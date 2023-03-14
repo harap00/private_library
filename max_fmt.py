@@ -1,6 +1,6 @@
-%%shell
-pip install yapf isort autopep8 | tail -n -1
-EOF
+import subprocess
+
+subprocess.run("pip install yapf isort autopep8 | tail -n -1", shell=True)
 
 import autopep8
 import isort
